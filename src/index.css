@@ -1,0 +1,170 @@
+/* google font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;800&family=VT323&display=swap');
+
+/* global style */
+:root {
+  --primary: #1aac83;
+  --error: #e7195a;
+}
+body {
+  background: #f1f1f1;
+  margin: 0;
+  font-family: "Poppins";
+}
+.pages{
+  max-width: 1400px;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+/* Home.jsx style */
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+.home-description {
+  max-width: 600px;
+  padding: 20px;
+  text-align: center;
+  line-height: 1.5;
+  font-size: 1.2em;
+  font-weight: 300;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.05);
+  background: #fff;
+}
+
+/* StudentCourses.jsx and TeacherCourses.jsx and Courses.jsx style */
+.courses-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* StudentCourseDetails.jsx and TeacherCourseDetails.jsx and GeneralCourseDetails.jsx style */
+/* CourseCard.css */
+.course-card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 16px;
+  margin: 8px;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  flex: 1 1 calc(33.333% - 16px);
+  margin: 8px;
+  box-sizing: border-box;
+}
+
+/* navbar */
+.navbar {
+  background: #fff;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar a {
+  color: #333;
+  text-decoration: none;
+}
+.navbar button, .navbar a {
+  margin-left: 10px;
+}
+
+
+/* new course form */
+input {
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.error {
+  padding: 10px;
+  background: #ffefef;
+  border: 1px solid var(--error);
+  color: var(--error);
+  border-radius: 4px;
+  margin: 20px 0;
+}
+
+
+/* login and signup forms */
+form.signup, form.login {
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 4px;
+}
+.role-selection {
+  margin: 20px 0;
+  font-family: Arial, sans-serif;
+}
+.role-label {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.radio-group {
+  display: flex;
+  gap: 20px;
+}
+.radio-label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.radio-group input[type="radio"] {
+  display: none;
+}
+.radio-group input[type="radio"] + .radio-label::before {
+  content: '';
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border: 2px solid #007bff;
+  border-radius: 50%;
+  margin-right: 10px;
+  vertical-align: middle;
+  transition: background 0.2s ease;
+}
+.radio-group input[type="radio"]:checked + .radio-label::before {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+button {
+  padding: 12.5px 30px;
+  border: 0;
+  border-radius: 100px;
+  background-color: #2ba8fb;
+  color: #ffffff;
+  font-weight: Bold;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #6fc5ff;
+  box-shadow: 0 0 20px #6fc5ff50;
+  transform: scale(1.1);
+}
+button:active {
+  background-color: #3d94cf;
+  transition: all 0.25s;
+  -webkit-transition: all 0.25s;
+  box-shadow: none;
+  transform: scale(0.98);
+}
+
+.login-button {
+  width: 100%;
+}
