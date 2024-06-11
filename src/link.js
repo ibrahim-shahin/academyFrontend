@@ -1,3 +1,3 @@
-const LINK = 'http://localhost:4000'
+const LINK = 'https://academybackend-66bt.onrender.com'
 
 export default LINK
